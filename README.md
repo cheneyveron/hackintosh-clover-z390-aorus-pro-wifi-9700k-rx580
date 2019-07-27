@@ -1,5 +1,9 @@
 # 黑苹果 四叶草配置 Gigabyte z390 Aorus Pro WiFi 
 
+![关于本机](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/attachment/imgs/aboutme.png)
+
+更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/attachment/imgs/)
+
 ## 硬件配置
 
 - 主板：技嘉 Z390 Aorus Pro WiFi
@@ -10,7 +14,7 @@
 - 硬盘：西部数据黑盘 SN750 500G
 - 电源：海韵Focus 850W
 - 散热：大镰刀千石船单风扇版本
-- 网卡：BCM943602CS，在"深圳市成东数码科技"购买，3个月左右蓝牙就坏了，大家可以注意一下。
+- 网卡：BCM943602CS，在"深圳市成东数码科技"购买，3个月左右蓝牙就坏了，大家可以注意一下。目前使用的是USB蓝牙，同样可以用HandOff
 
 ### 硬件选购Tips:
 
@@ -47,7 +51,6 @@
 16. Power → RC6 (Render Standby)
 
 如果是4k显示器，想使用板载HDMI接口，请先将显示器的HDMI输入接口版本设置为1.4，一般在OSD菜单中可以设置。否则会显示器无输出。
-
 
 ## 软件说明
 
