@@ -480,26 +480,26 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C02702403GUJ0PGAD</string>
+		<string>C02902300GULNV98C</string>
 		<key>ROM</key>
 		<data>
-		JBp80lcC
+		t93bwzah
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>05/25/2019</string>
+		<string>05/28/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM183.88Z.F000.B00.1905251430</string>
+		<string>IM191.88Z.F000.B00.1905281819</string>
 		<key>Board-ID</key>
-		<string>Mac-BE088AF8C5EB4FA2</string>
+		<string>Mac-AA95B1DDAB278B95</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02702403GUJ0PGAD</string>
+		<string>C02902300GULNV98C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -511,11 +511,11 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>173.0.0.0.0</string>
+		<string>220.270.76.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -527,18 +527,18 @@
 		<key>PlatformFeature</key>
 		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMac18,3</string>
+		<string>iMac19,1</string>
 		<key>SerialNumber</key>
-		<string>C02T3DYYJ1GJ</string>
+		<string>C02Y3ZZ4JV3Q</string>
 		<key>SmUUID</key>
-		<string>23BB4D85-99C5-4AF8-B622-3AC822D25702</string>
+		<string>D906FAC1-E61D-436B-A446-7435A7C336A1</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>23BB4D85-99C5-4AF8-B622-3AC822D25702</string>
+		<string>D906FAC1-E61D-436B-A446-7435A7C336A1</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
