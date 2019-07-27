@@ -2,7 +2,7 @@
 
 ![关于本机](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/attachment/imgs/aboutme.png)
 
-更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/attachment/imgs/)
+更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/pics.md)
 
 ## 硬件配置
 
