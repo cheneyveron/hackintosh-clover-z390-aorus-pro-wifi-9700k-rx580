@@ -8,20 +8,22 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>FakeLPC</key>
+				<false/>
 				<key>FixDisplay</key>
-				<true/>
+				<false/>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
-				<true/>
+				<false/>
 				<key>FixRTC</key>
-				<true/>
+				<false/>
 				<key>FixShutdown</key>
-				<true/>
+				<false/>
 				<key>FixTMR</key>
-				<true/>
+				<false/>
 				<key>FixWAK</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -71,18 +73,18 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
-				<key>PStates</key>
-				<true/>
-				<key>PluginType</key>
 				<false/>
+				<key>PStates</key>
+				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 -v</string>
+		<string>slide=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -104,25 +106,6 @@
 			<integer>7</integer>
 			<key>ResetHDA</key>
 			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x0</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -314,11 +297,6 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
-		</array>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Mouse</key>
@@ -332,6 +310,8 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
+			<key>Legacy</key>
+			<false/>
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
@@ -339,6 +319,8 @@
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
+		<key>Theme</key>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -347,7 +329,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -364,7 +346,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>xcpm_core_scope_msrs © Pike R. Alpha</string>
+				<string>xcpm_core_scope_msrs ? Pike R. Alpha</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
@@ -489,11 +471,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>05/28/2019</string>
+		<string>10/09/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM191.88Z.F000.B00.1905281819</string>
+		<string>IM191.88Z.F000.B00.1910090230</string>
 		<key>Board-ID</key>
 		<string>Mac-AA95B1DDAB278B95</string>
 		<key>BoardManufacturer</key>
@@ -511,13 +493,13 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>220.270.76.0.0</string>
+		<string>1037.40.118.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>FirmwareFeatures</key>
 		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFFDFFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -525,7 +507,7 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0x00</string>
+		<string>0x22</string>
 		<key>ProductName</key>
 		<string>iMac19,1</string>
 		<key>SerialNumber</key>
