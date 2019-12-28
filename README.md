@@ -1,6 +1,6 @@
 # 黑苹果 四叶草配置 Gigabyte z390 Aorus Pro WiFi 
 
-![关于本机](https://img.itmanbu.com//wp-content/uploads/2019/12/aboutme.png)
+[关于本机](https://img.itmanbu.com//wp-content/uploads/2019/12/aboutme.png)
 
 更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/pics.md)
 
@@ -54,8 +54,8 @@
 
 ## 软件说明
 
-- 操作系统版本：macOS Mojave 10.14.5 & 10.14.6
-- Clover 版本：5018
+- 操作系统版本：macOS Mojave 10.15.2
+- Clover 版本：5099
 - CPU变频：正常。原生11档(1000 / 1300 / 3600 / 3700 / 4000 / 4100 / 4300 / 4400 / 4600 / 4800 / 4900)
 - UHD630：正常。使用Clover注入设备ID。
 - RX580：正常。原生驱动。
