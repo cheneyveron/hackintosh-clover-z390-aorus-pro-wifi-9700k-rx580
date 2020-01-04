@@ -1,6 +1,6 @@
 # 黑苹果 四叶草配置 Gigabyte z390 Aorus Pro WiFi 
 
-![关于本机](https://img.itmanbu.com//wp-content/uploads/2019/12/aboutme.png)
+[关于本机](https://img.itmanbu.com//wp-content/uploads/2019/12/aboutme.png)
 
 更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/pics.md)
 
@@ -48,19 +48,19 @@
 13. Chipset → Above 4G Decoding → Disabled
 14. Power → Platform Power Management → Disabled
 15. Power → ErP → Disabled
-16. Power → RC6 (Render Standby)
+16. Power → RC6 (Render Standby) -> Disabled
 
-如果是4k显示器，想使用板载HDMI接口，请先将显示器的HDMI输入接口版本设置为1.4，一般在OSD菜单中可以设置。否则会显示器无输出。
+如果是4k显示器，想使用板载HDMI接口，请先将显示器的HDMI输入接口版本设置为1.4，一般在OSD菜单中可以设置。
 
 ## 软件说明
 
-- 操作系统版本：macOS Mojave 10.14.5 & 10.14.6
-- Clover 版本：5018
+- 操作系统版本：macOS Catalina 10.15.2
+- Clover 版本：5101
 - CPU变频：正常。原生11档(1000 / 1300 / 3600 / 3700 / 4000 / 4100 / 4300 / 4400 / 4600 / 4800 / 4900)
 - UHD630：正常。使用Clover注入设备ID。
 - RX580：正常。原生驱动。
 - 3.5mm声音 & HDMI：均正常使用，使用AppleALC驱动。
-- USB：正常。使用`SSDT-UIAC.aml`搭配`USBInjectAll.kext`驱动。所有接口均可以使用，但是所有3.0接口都不可以使用2.0的设备。
+- USB：正常。
 - SSD Trim：正常。使用了Clover的KextsPatch。
 - 有线网卡：正常。使用了IntelMausiEthernet.kext
 - 睡眠唤醒：正常。
@@ -75,4 +75,5 @@
 - [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/)：强大的通用操作系统引导器
 - @[**vit9696**](https://github.com/vit9696)：制作 Lilu & AppleALC
 - @[**glasgood**](https://www.insanelymac.com/forum/profile/1077361-glasgood/)：写了一篇详细的Aorus Pro WiFi主板安装教程，见[这里](https://www.insanelymac.com/forum/topic/337837-glasgoods-macos-mojave-successguide-for-aorus-z390-pro/)
+- @[**cfmwan**](http://i.pcbeta.com/space-uid-8977.html)：分享的其EFI，其中有制作的修复睡眠、USB等功能的SSDT，见[这里](http://bbs.pcbeta.com/viewthread-1832693-1-1.html)
 - [远景论坛](http://bbs.pcbeta.com) & [InsanelyMac](http://www.insanelymac.com)：提供交流的场所
