@@ -10,7 +10,7 @@
 - BIOS版本：F9
 - CPU：i7-9700k @ 5.2GHz
 - 显卡：希世 RX580 4G + 技嘉 Gaming OC RTX 2080
-- 内存：科赋雷霆 3000 C15 16G x2
+- 内存：科赋雷霆 3000 16G x2 + 海盗船  LPX 3000 16G C15
 - 硬盘：西部数据黑盘 SN750 500G
 - 电源：海韵Focus 850W
 - 散热：猫头鹰NH-D15
@@ -90,8 +90,8 @@
 
 ## 软件说明
 
-- 操作系统版本：macOS Catalina 10.15.3
-- OpenCore 版本：0.5.5
+- 操作系统版本：macOS Catalina 10.15.4
+- OpenCore 版本：0.5.6
 - CPU变频：正常。原生7档(800 / 1300 / 2000 / 2700 / 3400 / 4000 / 5200)
 - UHD630：正常。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id`注入ID `0300983E`。
 - RX580：正常。原生驱动。
