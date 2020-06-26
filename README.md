@@ -4,6 +4,38 @@
 
 更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/pics.md)
 
+## macOS Big Sur 11.0 特别说明
+
+目前Big Sur仍存在诸多问题：
+
+- 安装程序会进入死循环：无法通过macOS installer安装，需要在白果上，或虚拟机中安装完成后clone到本地。
+- 第一次启动不成功：先启动Catalina，再重启进Big Sur即可。
+- 电源管理缺陷：睡眠会重启，关机无法断电。白果上关机也出现失败情况，猜测系统BUG。
+- ...
+
+尝鲜建议另分一个区安装。
+
+## 彩蛋：Z390的板载无线网卡
+
+z390的板载网卡，除了华擎itx默认屏蔽CNVi功能外，都因CNVi协议默认开启而不支持macOS。
+
+在关闭CFG Lock时，我搜了一下CNVi，发现在BIOS中有隐藏的开关，默认开启状态：
+
+```
+Form: Connectivity Configuration, FormId: 0x271C {01 86 1C 27 9C 07}
+0x37DE4         Text: Statement.Prompt: CNVi present, TextTwo: No {03 08 9E 07 9F 07 A0 07}
+0x37DEC         Text: Statement.Prompt: CNVi Configuration, TextTwo:  {03 08 A1 07 A1 07 00 00}
+0x37DF4         One Of: CNVi Mode, VarStoreInfo (VarOffset/VarName): 0x10CD, VarStore: 0x1, QuestionId: 0x1C9, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 A2 07 A3 07 C9 01 01 00 CD 10 10 10 00 01 00}
+0x37E05             One Of Option: Disable Integrated, Value (8 bit): 0x0 {09 07 A5 07 00 00 00}
+0x37E0C             One Of Option: Auto Detection, Value (8 bit): 0x1 (default) {09 07 A4 07 30 00 01}
+0x37E13         End One Of {29 02}
+...
+```
+
+理论上来说，只要类似的执行`setup_var 0x10CD 0x0`，应该就可以关闭CNVi协议。然后替换上BCM94系的网卡+转接卡，是不是就能识别了呢？
+
+我现在手头没有转接卡，有兴趣的朋友可以试一试。
+
 ## 硬件配置
 
 - 主板：技嘉 Z390 Aorus Pro WiFi
@@ -90,8 +122,8 @@
 
 ## 软件说明
 
-- 操作系统版本：macOS Catalina 10.15.4
-- OpenCore 版本：0.5.6
+- 操作系统版本：macOS Catalina 10.15.5 & macOS Big Sur 11.0
+- OpenCore 版本：0.6.0(2020.06.26当天编译)
 - CPU变频：正常。原生7档(800 / 1300 / 2000 / 2700 / 3400 / 4000 / 5200)
 - UHD630：正常。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id`注入ID `0300983E`。
 - RX580：正常。原生驱动。
