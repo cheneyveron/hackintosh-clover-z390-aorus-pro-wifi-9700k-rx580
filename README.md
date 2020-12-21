@@ -4,17 +4,6 @@
 
 更多图片在[这里](https://github.com/cheneyveron/hackintosh-clover-z390-aorus-pro-wifi-9700k-rx580/blob/master/pics.md)
 
-## macOS Big Sur 11.0 特别说明
-
-目前Big Sur仍存在诸多问题：
-
-- 安装程序会进入死循环：无法通过macOS installer安装，需要在白果上，或虚拟机中安装完成后clone到本地。
-- 第一次启动不成功：先启动Catalina，再重启进Big Sur即可。
-- 电源管理缺陷：睡眠会重启，关机无法断电。白果上关机也出现失败情况，猜测系统BUG。
-- ...
-
-尝鲜建议另分一个区安装。
-
 ## 彩蛋：Z390的板载无线网卡
 
 z390的板载网卡，除了华擎itx默认屏蔽CNVi功能外，都因CNVi协议默认开启而不支持macOS。
@@ -41,7 +30,7 @@ Form: Connectivity Configuration, FormId: 0x271C {01 86 1C 27 9C 07}
 - 主板：技嘉 Z390 Aorus Pro WiFi
 - BIOS版本：F9
 - CPU：i7-9700k @ 5.2GHz
-- 显卡：希世 RX580 4G + 技嘉 Gaming OC RTX 2080
+- 显卡：松景 RX470 4G + 技嘉 Gaming OC RTX 2080
 - 内存：科赋雷霆 3000 16G x2 + 海盗船  LPX 3000 16G C15
 - 硬盘：西部数据黑盘 SN750 500G
 - 电源：海韵Focus 850W
@@ -122,11 +111,11 @@ Form: Connectivity Configuration, FormId: 0x271C {01 86 1C 27 9C 07}
 
 ## 软件说明
 
-- 操作系统版本：macOS Catalina 10.15.5 & macOS Big Sur 11.0
-- OpenCore 版本：0.6.0(2020.06.26当天编译)
+- 操作系统版本：macOS Big Sur 11.1(20C69)
+- OpenCore 版本：0.6.4
 - CPU变频：正常。原生7档(800 / 1300 / 2000 / 2700 / 3400 / 4000 / 5200)
 - UHD630：正常。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id`注入ID `0300983E`。
-- RX580：正常。原生驱动。
+- 松景RX470：默认无GOP-UEFI支持，刷入Gigabyte RX570 BIOS后完美使用。
 - 3.5mm声音 & HDMI：均正常使用，使用AppleALC驱动。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x1b,0x0)` -> `layout-id`注入ID `0B000000`。
 - USB：前面板仅保留3.0接口，后面板只留了TypeC接口，请自行修改`kexts/USBPorts.kext`
 - SSD Trim：正常。
