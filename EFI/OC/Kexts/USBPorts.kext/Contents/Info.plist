@@ -46,6 +46,8 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>AwAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS04</key>
 					<dict>
@@ -53,6 +55,8 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>BAAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS05</key>
 					<dict>
@@ -60,6 +64,8 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>BQAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS07</key>
 					<dict>
@@ -67,13 +73,17 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>BwAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
-					<key>HS08</key>
+					<key>HS11</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>CAAAAA==</data>
+						<data>CwAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS09</key>
 					<dict>
@@ -81,6 +91,8 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>CQAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS10</key>
 					<dict>
@@ -88,6 +100,8 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>CgAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>2</integer>
 					</dict>
 					<key>HS13</key>
 					<dict>
@@ -102,6 +116,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>EwAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS04</key>
 					<dict>
@@ -109,6 +125,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>FAAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS05</key>
 					<dict>
@@ -116,6 +134,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>FQAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS07</key>
 					<dict>
@@ -123,6 +143,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>FwAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS08</key>
 					<dict>
@@ -130,6 +152,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>GAAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS09</key>
 					<dict>
@@ -137,6 +161,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>GQAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS10</key>
 					<dict>
@@ -144,6 +170,8 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>GgAAAA==</data>
+						<key>DevSpeed</key>
+						<integer>3</integer>
 					</dict>
 				</dict>
 			</dict>

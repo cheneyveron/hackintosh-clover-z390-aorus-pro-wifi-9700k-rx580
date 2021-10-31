@@ -111,8 +111,8 @@ Form: Connectivity Configuration, FormId: 0x271C {01 86 1C 27 9C 07}
 
 ## 软件说明
 
-- 操作系统版本：macOS Big Sur 11.1(20C69)
-- OpenCore 版本：0.6.4
+- 操作系统版本：macOS Monterey 12.0.1(21A559)
+- OpenCore 版本：0.7.4
 - CPU变频：正常。原生7档(800 / 1300 / 2000 / 2700 / 3400 / 4000 / 5200)
 - UHD630：正常。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id`注入ID `0300983E`。
 - 松景RX470：默认无GOP-UEFI支持，刷入Gigabyte RX570 BIOS后完美使用。
